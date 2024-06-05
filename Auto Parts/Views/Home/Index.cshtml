@@ -1,8 +1,30 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero">
+    <div class="container">
+        <h2>Find the Best Auto Parts</h2>
+        <p>@ViewBag.data</p>
+    </div>
+</div>
+
+<div class="featured-products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+            <img src="~/images/stearing.jpeg" alt="Steering Wheel">
+            <h3>Steering Wheel</h3>
+            <p>Hydrodrive steering wheel 16121-VSB - stainless steel / black</p>
+            <span class="price">$49.99</span>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="~/images/tyre.jpeg" alt="Tyre">
+            <h3>Tyre</h3>
+            <p>Tyre Solar P1 R1 Tubeless Premium Upgraded | Spare Parts | Tyres and Inner Tubes</p>
+            <span class="price">$29.99</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
 </div>

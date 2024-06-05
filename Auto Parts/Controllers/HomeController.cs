@@ -1,5 +1,6 @@
 using Auto_Parts.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Diagnostics;
 
 namespace Auto_Parts.Controllers
@@ -15,13 +16,11 @@ namespace Auto_Parts.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.data = "Explore our wide range of high-quality auto parts.";
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+       
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
